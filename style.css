@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    background: url(./images/pexels-polina-kovaleva-5717479.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#add-task-container{
+    width: 350px;
+    padding: 20px 10px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 3px;
+
+    display: flex;
+
+}
+
+input{
+    flex: 5;
+    margin-right: 10px;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    padding: 5px;
+}
+
+#add-task{
+    flex: 1;
+    font-size: 1.3rem;
+    padding: 5px;
+
+    transition: .3s;
+
+
+    color: green;
+    background-color: white;
+    border: solid 2px green;
+    border-radius: 10px
+}
+
+#add-task:hover{
+    background-color: green;
+    color: white;
+    
+}
+
+
+/*styling for task which gets added to the task container*/
+
+.task{
+    width: 350px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 3px;
+    position: relative;
+    top: 80px;
+    right: 350px;
+
+    padding: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.task li{
+    list-style: none;
+    flex: 4;
+    padding: 5px;
+    font-size: 1.4rem;
+    margin: 10px;
+}
+
+.task button{
+    flex: 1;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.task .checkList{
+    color: orange;
+    border: solid 2px orange;
+    margin: 5px;
+    font-size: 1.4rem;
+    transition: 0.5s;
+
+}
+
+.task .checkList:hover{
+    background-color: orange;
+    color: white;
+}
+
+
+.task .deleteList{
+    color: red;
+    border: solid 2px red;
+    margin: 5px;
+    font-size: 1.4rem;
+    transition: 0.5s;
+}
+
+.task .deleteList:hover{
+    background-color: red;
+    color: white;
+}
